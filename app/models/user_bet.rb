@@ -76,7 +76,7 @@ class UserBet < ApplicationRecord
       total = (money_bet * bet.odds).to_i
       "You won #{total} dollars from your bet on #{bet.player.name} to #{bet.description}"
     else
-      "You lost #{money_bet.to_i} dollars from your bet on #{bet.player.name} sucks to suck"
+      "You lost #{money_bet.to_i} dollars from your bet on #{bet.player.name} better luck next time"
     end
   end
 end
